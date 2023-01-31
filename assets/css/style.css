@@ -1,7 +1,10 @@
 :root{
-    --primary-color: #0A1128;
+    --primary-color: #73264c;
     --white-color: #ffffff;
+    --menu-words: #1a001a;
+    --border-menu: #391326;
     --gap: 3rem;
+    
 }
 
 *{
@@ -14,9 +17,7 @@ html{
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    color: var(--primary-color);
-   
+    font-size: 2rem;  
 }
 
 h1 h2 h3 h4 h5 h6{
@@ -73,4 +74,43 @@ h6{
 
 .height-viewport{
     min-height: 100vh;
+}
+
+.menu{
+    background: var(--primary-color);
+    border-bottom: 1px solid var(--border-menu);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a{
+    display: block;
+    color: var(--menu-words);
+    text-decoration: none;
+    padding: 2.5rem;
+    font-size: 1.8rem;  
+}
+
+.menu ul li a:hover{
+ transition: all 300ms ease-in-out;
+     width: 50%;
+     background: var(--border-menu);
+     border-radius: 4rem;
 }
