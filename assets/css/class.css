@@ -1,0 +1,21 @@
+.main-back{
+    background-image: url('../img/fundo.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-back{
+   background-color: var(--white-color);
+}
+
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.height-viewport{
+    min-height: 100vh;
+}
